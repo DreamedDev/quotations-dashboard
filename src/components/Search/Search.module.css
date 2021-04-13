@@ -1,0 +1,37 @@
+.Search{
+ position: relative;
+}
+
+.Search > .SearchIcon{
+    position: absolute;
+    top: 9px;
+    left: 11px;
+    font-size: 20px;
+    color: rgba(0,0,0,0.6);
+}
+
+.Search > input{
+    outline: none;
+    background-color: #f7f9f9;
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 8px 15px;
+    padding-left: 40px;
+    width: 420px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.8);
+}
+
+.Search > input:focus{
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 7px 14px;
+    padding-left: 39px;
+}
+
+.Search > input::placeholder{
+    color: rgba(0,0,0,0.6);
+    font-size: 14px;
+    font-weight: 400;
+}

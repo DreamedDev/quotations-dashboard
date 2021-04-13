@@ -1,0 +1,102 @@
+.DrawerContainer{
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    width: 80px;
+    box-shadow: 2px 0 1px 0 rgba(0,0,0,0.1);
+    z-index: 6;
+}
+
+.Drawer{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    min-height: 545px;
+}
+
+.Drawer i{
+    position: relative;
+    margin: 8px;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    /*color: #c1c4bf;*/
+    color: rgba(0,0,0,0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.7s ease;
+}
+
+.Drawer i:hover{
+    background-color: #f2f4f4;
+    cursor: pointer;
+    color: rgba(0,0,0,0.7);
+}
+
+.Drawer i:active{
+    background: #f6f8f8;
+}
+
+.Drawer i.Clicked:hover{
+    background-color: rgba(48, 42, 108, 0.15);
+}
+
+.Drawer i.Clicked:active{
+    background-color: rgba(48, 42, 108, 0.12);
+}
+
+.Drawer i:first-child{
+    margin-top: 20px;
+    margin-bottom: 65px;
+    color: rgba(0,0,0,0.75);
+    border-radius: 50%;
+    width: 50px;
+}
+
+.Drawer i:last-child{
+    margin-bottom: 20px;
+    color: rgba(0,0,0,0.75);
+    border-radius: 50%;
+    width: 50px;
+    background-color: #f7f9f9;
+    margin-top: auto;
+}
+
+.Drawer i.Clicked{
+    /*background-color: #f7f9f9;*/
+    background-color: rgba(48, 42, 108, 0.1);
+    color: #302A6C;
+    transition: all 0.7s ease;
+}
+
+.Drawer i:first-child:hover,
+.Drawer i:last-child:hover{
+    color: #000;
+}
+
+.Drawer i:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100%;
+    background: #302A6C;
+    padding-top: 100%;
+    opacity: 0;
+    transition: all 0.7s ease;
+    border-radius: 50%;
+}
+
+.Drawer i:active:before{
+    transition: 0s;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.4;
+}

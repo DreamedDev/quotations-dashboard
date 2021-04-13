@@ -1,0 +1,6 @@
+.List{
+    height: calc(100vh - 140px);
+    padding: 30px;
+    position: relative;
+    z-index: 4;
+}

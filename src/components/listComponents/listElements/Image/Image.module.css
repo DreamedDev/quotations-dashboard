@@ -1,0 +1,13 @@
+.ImageContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.Image{
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}

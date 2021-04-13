@@ -1,0 +1,78 @@
+.Button{
+    font-size: 12px;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.Button:active{
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Button:hover{
+    cursor: pointer;
+}
+
+.Action{
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background-color: #302A6C;
+}
+
+.Action:active{
+    background-color: #413B7D;
+}
+
+.FilterWhite{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.2);
+    color: rgba(0,0,0,0.6);
+    margin-right: 12px;
+}
+
+.FilterWhite:active{
+    background-color: #f7f9f9;
+}
+
+.FilterColor{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #4DB6AC;
+    color: #009688;
+    background-color: #E0F2F1;
+}
+
+.FilterColor:active{
+    background-color: #E5F7F6;
+}
+
+.Button > div{
+    display: flex;
+    align-items: center;
+}
+
+.Button:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100%;
+    background: #fff;
+    padding-top: 100%;
+    opacity: 0;
+    transition: all 0.7s ease;
+    border-radius: 50%;
+}
+
+.FilterWhite:before{
+    background: #302A6C;
+}
+
+.Button:active:before{
+    transition: 0s;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.6;
+}

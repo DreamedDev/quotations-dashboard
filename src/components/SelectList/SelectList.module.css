@@ -1,0 +1,68 @@
+.Container{
+    display: flex;
+}
+
+.SelectList{
+
+}
+
+.Selected{
+    /*background-color: #eae9f0;
+    color: #302a6c;*/
+    padding: 5px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.Selected > p{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.ItemsContainer{
+    position: relative;
+    top: -65px;
+    left: 0px;
+    display: block;
+}
+
+.Items{
+    position: fixed;
+    z-index: 1;
+
+    background-color: #fff;
+    color: #302a6c;
+    padding: 12px;
+    font-size: 14px;
+    margin: 0 0px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
+    width: 150px;
+}
+
+.Items > p{
+    padding: 10px 30px;
+    border-radius: 8px;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.Items > p:hover{
+    background-color: #f2f4f4;
+}

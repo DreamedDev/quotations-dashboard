@@ -1,0 +1,41 @@
+.ListRow{
+    display: grid;
+    align-items: center;
+
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 15px 0px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.06);
+}
+
+.ListRow > *{
+    padding-left: 15px;
+}
+
+.ListRow:hover{
+    /*cursor: pointer;*/
+}
+
+.ListRow:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100%;
+    background: #000;
+    padding-top: 100%;
+    opacity: 0;
+    transition: all 0.7s ease;
+    border-radius: 50%;
+}
+
+.ListRow:active:before{
+    transition: 0s;
+    transform: translate(-50%, -50%) scale(0);
+    /*opacity: 0.05;*/
+    opacity: 0;
+}
