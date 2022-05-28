@@ -3,3 +3,6 @@ The project presents sample template of user dashboard. It was designed using Re
 
 ### Show demo:
 [Quotations dashboard](https://quotations-dashboard.herokuapp.com/)
+
+#### Info:
+The above project hosted using Heroku platform is in a sleep state by default so its loading time may take up to a few seconds.
